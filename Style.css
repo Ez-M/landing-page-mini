@@ -12,15 +12,16 @@ header {
     
 }
 
-ul {
+/*nav form displays buttons that function as links*/
+
+nav {
 
     background-color:rgb(70, 161, 236);
     padding-bottom: 20px;
 }
-li {
 
+nav form{
     display:inline;
-    padding-left: 10px;
 }
 /* added display flex to main and justified content to center 
 to better allow for additional features pending*/
@@ -45,13 +46,13 @@ figure {
 
 /* Sticks a contact form footer to the bottom of the
 page regardless of size*/
-form{
+footer{
     font-weight: 600;
     background-color: rgb(231, 149, 117);
     text-align: center;
     position: fixed;
     bottom: 0;
-    width: 100%;    
+    width: 100%;
 }
 
 #lnamelabel {
