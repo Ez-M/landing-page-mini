@@ -24,33 +24,34 @@ li {
 }
 /* added display flex to main and justified content to center 
 to better allow for additional features pending*/
+/* added flex-wrap, applies to asides and figure*/
+/*margin bottom prevents overlapping with form*/
 main {
-    display: flex;  
+    Display: flex;
     justify-content: center;
-    order: 1;
-
+    flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
-
-.imgcrab {
-    display: flex;
+aside {
+    width: 10%;
 }
 
-figcaption {
+figure {
     text-align: center;
-
+    
 }
 
-/* changed footer to form per HTML changes*/
+
+/* Sticks a contact form footer to the bottom of the
+page regardless of size*/
 form{
     font-weight: 600;
     background-color: rgb(231, 149, 117);
     text-align: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 100%
-    
-    
+    width: 100%;    
 }
 
 #lnamelabel {
@@ -62,3 +63,21 @@ form{
     padding-left: 27px;
 }
 
+/* resizes and reorders figure and asides to better facilite mobile browsering */
+@media screen and (max-width: 900px) {
+    figure {
+        width: 100%;
+        order: 1;
+    }
+
+    .notable {
+        width: 100%;
+        order: 2;
+    }
+
+    .facts {
+        width: 100%;
+        order: 3;
+    }
+    
+}
