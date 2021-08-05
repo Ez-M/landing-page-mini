@@ -22,12 +22,18 @@ li {
     display:inline;
     padding-left: 10px;
 }
+/* added display flex to main and justified content to center 
+to better allow for additional features pending*/
+main {
+    display: flex;  
+    justify-content: center;
+    order: 1;
 
-#imgcrab {
+}
 
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
+
+.imgcrab {
+    display: flex;
 }
 
 figcaption {
@@ -35,8 +41,8 @@ figcaption {
 
 }
 
-
-main{
+/* changed footer to form per HTML changes*/
+form{
     font-weight: 600;
     background-color: rgb(231, 149, 117);
     text-align: center;
